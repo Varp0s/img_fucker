@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile 
+    ports:
+      - "1453:1453"
+    depends_on:
+      - img_fucker
+
+  img_fucker:
+    build:
+      context: .
+      dockerfile: Dockerfile

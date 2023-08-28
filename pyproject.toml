@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "img-lover"
+version = "0.0.7"
+description = "python ocr"
+authors = ["Varp0s"]
+readme = "README.md"
+packages = [{include = "img_lover"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pytesseract = "^0.3.10"
+dynaconf = "^3.2.2"
+uvicorn = "^0.23.2"
+fastapi = "^0.103.0"
+httpx = "^0.24.1"
+redis = "^5.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
